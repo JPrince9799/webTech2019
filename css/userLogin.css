@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background:url("images/loginBackground.jpg");
+	background-size: cover;
+}
+body.background{
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -10%;
+	left: calc(50% - 50px);
+}
+.box{
+	width: 300px;
+	padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #1A1964;
+	text-align: center;
+	border-shadow: 6px 6px 6px black;
+	border-radius: 20px;
+}
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.box h3{
+	color: green;
+}
+.box input[type="email"], input[type="password"]{
+	border: none;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 15px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 25px;
+	transition: 0.25s;
+}
+.box input[type="email"]:focus, input[type="password"]:focus{
+	width: 300px;
+	border-color: green;
+}
+.box input[type="submit"]{
+	border: none;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 5px solid green;
+	padding: 15px 40px;
+	outline: none;
+	color: white;
+	border-radius: 25px;
+	transition: 0.25s;
+	curser: pointer;
+}
+.box input[type="submit"]:hover{
+	background: green;
+}
+.box a{
+	color: white;
+}
+.box a:hover{
+	color: #000;
+}

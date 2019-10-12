@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navbar-brand{
+	font-size: 40px;
+}
+ul li a{
+	transition: 0.5s ease;
+	font-size: 20px;
+}
+ul li a:hover{
+	background-color: greenyellow;
+	cursor: pointer;
+}
+.my-0  input:focus{
+	width: 450px;
+	border-radius: 20px;
+}
+.btn .fa.fa-sm{
+	font-size: 1rem;
+	margin-top: -5px;
+}

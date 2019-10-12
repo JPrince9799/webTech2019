@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url("images/loginBackground.jpg");
+	background-size: cover;
+	font-family: sans-serif;
+}
+.signupbox{
+	width: 450px;
+	height: 650px;
+	background: #22266C;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 50px 30px;
+	border-radius: 20px;
+	box-shadow: 6px 6px 6px black;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -10%;
+	left: calc(50% - 50px);
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 35px;
+}
+.signupbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+.signupbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.signupbox input[type="text"], input[type="email"], input[type="password"]{
+	height: 35px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	background: transparent;
+	outline: none;
+	color: #fff;
+	font-size: 15px;
+}
+.signupbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.signupbox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #EB660C;
+	color: #000;
+}
+#TnC{
+	text-align-last: center;
+}
+#TnC p{
+	font-size: 15px;
+}
+#TnC a{
+	color: #fff;
+}
+#TnC a:hover{
+	color: #000;
+}
+.end{
+	text-align-last: right;
+	padding-top: 15px;
+}
+.end p{
+	font-size: 15px;
+	color: green;
+}
+.end a{
+	color: green;
+}
+.end a:hover{
+	color: #000;
+}
