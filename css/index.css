@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+body{
+	width: 100%;
+}
 .navbar-brand{
 	font-size: 40px;
 }
@@ -14,9 +17,60 @@ ul li a:hover{
 }
 .my-0  input:focus{
 	width: 450px;
-	border-radius: 20px;
+	border-radius: 10px;
 }
+
 .btn .fa.fa-sm{
 	font-size: 1rem;
 	margin-top: -5px;
 }
+
+.marg{
+	padding-left: 5%;
+}
+
+.sticky{
+	position: sticky;
+	top: 0%;
+	z-index: 2;
+	margin-top: -3%;
+}
+
+.posi1{
+	margin-bottom: 38%;
+}
+
+
+#carousel-example-2{
+    position: absolute;
+    width:100%;
+    top:0;
+  }
+
+.pad{
+	width: 60%;
+	padding-left: 5%;
+	font-size: 50px;
+}
+
+#myVideo{
+    width:138.5%;
+	margin-left: -20%;
+	position: relative;
+	z-index: -1;
+}
+
+.content {
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	position: static;
+	width: 138%;
+	margin-left: -18.5%;
+	margin-top: -50%;
+	margin-bottom: 40%;
+  }
+
+.align{
+	width: 10%;
+}
+
