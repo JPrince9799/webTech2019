@@ -1,15 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 body{
 	width: 100%;
 }
 .navbar-brand{
-	font-size: 40px;
+	font-weight: bold;
+}
+.navbar-brand img{
+	height: 40px;
+	width: 50px;
+	border-radius: 10px;
 }
 ul li a{
 	transition: 0.5s ease;
-	font-size: 20px;
+	font-size: 30px;
+	font-weight: bold;
 }
 ul li a:hover{
 	background-color: greenyellow;
@@ -17,49 +24,55 @@ ul li a:hover{
 }
 .my-0  input:focus{
 	width: 450px;
-	border-radius: 10px;
+	border-radius: 20px;
 }
-
 .btn .fa.fa-sm{
 	font-size: 1rem;
 	margin-top: -5px;
 }
-
+#navHolder{
+	background: rgba(255,255,255, 0.2);
+	position: fixed;
+	height: 10%;
+	width: 100%;
+	z-index: 10;
+}
+.row img{
+	width: 400px;
+	height: 200px;
+}
+.btn .fa.fa-sm{
+	font-size: 1rem;
+	margin-top: -5px;
+}
 .marg{
 	padding-left: 5%;
 }
-
 .sticky{
 	position: sticky;
 	top: 0%;
 	z-index: 2;
 	margin-top: -3%;
 }
-
 .posi1{
 	margin-bottom: 38%;
 }
-
-
 #carousel-example-2{
     position: absolute;
     width:100%;
     top:0;
-  }
-
+}
 .pad{
 	width: 60%;
 	padding-left: 5%;
 	font-size: 50px;
 }
-
 #myVideo{
     width:138.5%;
 	margin-left: -20%;
 	position: relative;
 	z-index: -1;
 }
-
 .content {
 	background: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
@@ -68,9 +81,7 @@ ul li a:hover{
 	margin-left: -18.5%;
 	margin-top: -50%;
 	margin-bottom: 40%;
-  }
-
+}
 .align{
 	width: 10%;
 }
-
