@@ -1,17 +1,69 @@
 @charset "utf-8";
 /* CSS Document */
 
-body{
-	margin: 0;
-	padding: 0;
-	text-align: center;
+/*NAVBAR CODE*/
+.navbar-brand{
+	font-weight: bold;
 }
-.btc{
+.navbar-brand img{
+	height: 40px;
+	width: 50px;
+	border-radius: 10px;
+}
+ul li a{
+	transition: 0.5s ease;
+	font-size: 30px;
+	font-weight: bold;
+}
+ul li a:hover{
+	background-color: rgb(7, 129, 211);
+	cursor: pointer;
+}
+.my-0  input:focus{
+	width: 450px;
+	border-radius: 20px;
+}
+.btn .fa.fa-sm{
+	font-size: 1rem;
+	margin-top: -5px;
+}
+#navHolder{
+	background: rgba(255,255,255, 0.2);
+	position: fixed;
+	height: 10%;
+	width: 100%;
+	z-index: 10;
+}
+.row img{
+	width: 400px;
+	height: 200px;
+}
+.btn .fa.fa-sm{
+	font-size: 1rem;
+	margin-top: -5px;
+}
+.sticky{
+	position: sticky;
+	top: 0%;
+	z-index: 2;
+	margin-top: -3%;
+}
+
+
+/*TEXT CODE*/
+.BTC{
 	font-size: 50px;
+	line-height: 50px;
+	padding-top: 150px;
 }
-.secBody{
+.sectionBody{
 	font-size: 20px;
+	line-height: 50px;
 }
-h3{
+.BTC h3{
 	font-size: 25px;
+	line-height: 50px;
+}
+.container section{
+	text-align: center;
 }

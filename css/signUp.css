@@ -10,17 +10,18 @@ body{
 }
 .signupbox{
 	width: 500px;
-	height: 700px;
+	height: 715px;
 	background: #22266C;
 	color: #fff;
 	top: 50%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	padding: 50px 30px;
 	border-radius: 20px;
-	box-shadow: 6px 6px 6px black;
+	box-shadow: 10px 10px 10px black;
+	text-align: center;
 }
 .avatar{
 	width: 100px;
@@ -41,15 +42,22 @@ h1{
 	padding: 0;
 	font-weight: bold;
 	font-size: 20px;
+	color: green;
 }
 .signupbox input{
-	width: 100%;
+	width: 75%;
 	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 20px;
+}
+.signupbox input:focus{
+	width: 100%;
+	transition: 1.0s;
 }
 .signupbox input[type="text"], input[type="email"], input[type="password"]{
 	height: 35px;
 	border: none;
-	border-bottom: 1px solid #000000;
+	border-bottom: 2px solid #000000;
 	background: transparent;
 	outline: none;
 	color: #fff;
@@ -62,12 +70,16 @@ h1{
 	background: #fb2525;
 	color: #fff;
 	font-size: 18px;
-	border-radius: 20px;
+	border-radius: 10px;
+	width: 45%;
+	float: right;
 }
 .signupbox input[type="submit"]:hover{
 	cursor: pointer;
-	background: #EB660C;
+	background: #cf1616;
 	color: #000;
+	border-radius: 30px;
+	transition: 0.8s;
 }
 #TnC{
 	text-align-last: center;
@@ -80,6 +92,7 @@ h1{
 }
 #TnC a:hover{
 	color: #fff;
+	text-decoration: underline;
 }
 .end{
 	text-align-last: right;
@@ -90,42 +103,40 @@ h1{
 	color: green;
 }
 .end a{
-	color: green;
+	color: black;
+	text-decoration: underline;
 }
 .end a:hover{
-	color: #000;
+	color: green;
+}
+/*Navbar code*/
+#navHolder{
+	background: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	height: 10%;
+	width: 100%;
+	z-index: 10;
 }
 .navbar-brand{
-	font-size: 40px;
+	font-weight: bold;
 }
 .navbar-brand img{
 	height: 40px;
 	width: 50px;
 	border-radius: 10px;
 }
-.navbar-brand a{
-	color: black;
-}
 ul li a{
 	transition: 0.5s ease;
-	font-size: 20px;
+	font-size: 30px;
+	font-weight: bold;
 }
 ul li a:hover{
-	background-color: greenyellow;
+	background-color: black;
 	cursor: pointer;
 }
-.my-0  input:focus{
-	width: 450px;
-	border-radius: 20px;
-}
-.btn .fa.fa-sm{
-	font-size: 1rem;
-	margin-top: -5px;
-}
-#navHolder{
-	background: rgba(255,255,255, 0.2);
-	position: fixed;
-	height: 8%;
-	width: 100%;
-	z-index: 3;
+.errorMessage{
+	height: 5px;
+	color: red;
+	font-size: 15px;
+	padding: -5px;
 }

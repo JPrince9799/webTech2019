@@ -2,8 +2,7 @@
 /* CSS Document */
 
 body{
-	margin: 0;
-	padding: 0;
+	
 	font-family: sans-serif;
 	background: url(../images/loginBackground.jpg);
 	background-size: cover;
@@ -20,8 +19,8 @@ body.background{
 	top: -10%;
 	left: calc(50% - 50px);
 }
-.box{
-	width: 450px;
+.boxer{
+	width: 500px;
 	padding: 50px;
 	position: absolute;
 	top: 50%;
@@ -30,16 +29,17 @@ body.background{
 	background: #1A1964;
 	text-align: center;
 	border-radius: 20px;
+	box-shadow: 10px 10px 10px black;
 }
-.box h1{
+.boxer h1{
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.box h3{
+.boxer h3{
 	color: green;
 }
-.box input[type="email"], input[type="password"]{
+.boxer input[type="email"], input[type="password"]{
 	border: none;
 	background: none;
 	display: block;
@@ -47,17 +47,18 @@ body.background{
 	text-align: center;
 	border: 2px solid #3498db;
 	padding: 15px 10px;
-	width: 200px;
+	width: 75%;
 	outline: none;
 	color: white;
 	border-radius: 25px;
 	transition: 0.25s;
 }
-.box input[type="email"]:focus, input[type="password"]:focus{
-	width: 300px;
+.boxer input[type="email"]:focus, input[type="password"]:focus{
+	width: 100%;
 	border-color: green;
+	transition: 1.2s;
 }
-.box input[type="submit"]{
+.boxer input[type="submit"]{
 	border: none;
 	background: none;
 	display: block;
@@ -67,45 +68,49 @@ body.background{
 	padding: 15px 40px;
 	outline: none;
 	color: white;
-	border-radius: 25px;
+	border-radius: 20px;
 	transition: 0.25s;
-	curser: pointer;
+	cursor: pointer;
 }
-.box input[type="submit"]:hover{
+.boxer input[type="submit"]:hover{
 	background: green;
+	border-radius: 35px;
+	transition: 0.8s;
 }
-.box a{
+.boxer a{
 	color: white;
 }
-.box a:hover{
+.boxer a:hover{
 	color: #000;
 }
+
+/*Navbar css*/
+#navHolder{
+	background: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	height: 10%;
+	width: 100%;
+	z-index: 10;
+}
 .navbar-brand{
-	font-size: 40px;
+	font-weight: bold;
 }
 .navbar-brand img{
 	height: 40px;
 	width: 50px;
 	border-radius: 10px;
 }
-.navbar-brand a{
-	color: black;
-}
 ul li a{
 	transition: 0.5s ease;
-	font-size: 20px;
+	font-size: 30px;
+	font-weight: bold;
 }
 ul li a:hover{
-	background-color: greenyellow;
+	background-color: black;
 	cursor: pointer;
 }
-.my-0  input:focus{
-	width: 450px;
-}
-#navHolder{
-	background: rgba(255,255,255, 0.2);
-	position: fixed;
-	height: 10%;
-	width: 100%;
-	z-index: 3;
-}
+#loginError{
+	height: 5px;
+	color: red;
+	font-size: 15px;
+}	
