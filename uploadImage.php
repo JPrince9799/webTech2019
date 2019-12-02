@@ -24,6 +24,12 @@ if(isset($_POST['subBtn'])){
     echo "<script>alert('Image has been added')</script>";
 
   }
+  else if(mysqli_query($sql)){
+
+    
+    echo "<script>alert('Image is uploading')</script>";
+
+  }
   else{
     echo "<script>alert('Image has not been added')</script>";
   }
